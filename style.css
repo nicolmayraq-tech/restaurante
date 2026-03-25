@@ -1,0 +1,293 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: arial;
+}
+nav{
+    background-color: rgb(13, 10, 56);
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 2px solid blanchedalmond;
+    position: fixed;
+}
+.enlaces{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    align-items: center;
+}
+.enlace{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+.enlace:hover{
+    color: aqua;
+    transition: 0.8s;
+    font-size: 22px;
+}
+.contactos{
+    background-color: rgb(216, 125, 20);
+    padding: 5px;
+    border-radius: 12%;
+}
+.contactos:hover{
+    background-color: rgb(165, 42, 42);
+    color: aqua;
+    transition: 1s;
+    padding: 10px;
+    border-radius: 25%;
+}
+.logo{
+    width: auto;
+    height: 60px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fondo{ 
+    background: linear-gradient(rgba(10, 3, 53, 0.651), rgba(10, 3, 53, 0.651)), url('bolivia_fondo.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+.parrafo{
+    position: relative;
+    color: rgb(199, 164, 148);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+    font-weight: bold;
+    height: 90vh;
+    gap: 15px;
+}
+.parrafo:hover{
+    font-size: 20px;
+    transition: 1s;
+}
+h1{
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(235, 174, 45);
+}
+h1:hover{
+    transition: 0.5s;
+    font-size: 75px;
+}
+.texto{
+    color: rgb(252, 252, 255);
+    font-weight: normal;
+}
+.contenedor{
+    background-color: rgba(3, 0, 0, 0.452);
+    position: relative;
+    width: auto;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h2{
+    color: rgb(226, 138, 23);
+    font-size: 40px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 95px;
+    font-weight: bolder;
+}
+.cuadros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+.cuadro{
+    width: 200px;
+    height: 200px;
+}
+.cuadro:hover{
+    scale: 1.1;
+    transition: 0.7s;
+    font-size: 30px;
+    gap: 10px;
+}
+.cuadro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(105, 58, 14);
+}
+.comida{
+    color: rgb(252, 252, 255);
+    text-align: center;
+}
+footer {
+    background-color: blue;
+    background: black;
+    color: rgb(65, 65, 187);
+    padding: 10px;
+    margin-top: auto;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 2x;
+}
+.footer-title {
+    font-size: 1.8rem;
+    color: rgb(76, 122, 175);
+    margin-bottom: 1rem;
+}
+.footer-section h4 {
+    font-size: 1.2rem;
+    color: rgb(76, 122, 175);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 0.5rem;
+}
+.footer-description {
+    color: rgb(184, 179, 179);
+    line-height: 1.6;
+}
+.footer-links {
+    list-style: none;
+}
+.footer-links li {
+    margin-bottom: 1px;
+}
+.footer-links a {
+    color: rgb(184, 179, 179);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: rgb(76, 122, 175);
+}
+.footer-contact p {
+    margin-bottom: 0.5rem;
+    color: rgb(184, 179, 179);
+}
+.redes{
+    width: auto;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+}
+.redes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer-bottom {
+    border-top: 1px solid rgb(55, 55, 85);
+    margin-top: 2px;
+    padding-top: 1px;
+    text-align: center;
+    color: rgb(149, 165, 166);
+}
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        background: linear-gradient(rgb(62, 177, 197), rgb(35, 16, 117));
+        position: relative;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 10px;
+    }
+    .logo img {
+        width: auto;
+        height: 60px;
+    }
+    .enlaces {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .enlaces li {
+        display: flex;
+        text-align: center;
+    }
+    .enlaces a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+        height: 40px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 10px;
+        border: 1px double rgba(255,255,255,0.2);
+    }
+    h1{
+        font-size: 40px;
+        margin-left: 15px;
+    }
+    h1:hover{
+    transition: 0.5s;
+    font-size: 42px;
+    }
+    .texto{
+        padding: 15px;
+    }
+    .parrafo{
+        position: relative;
+        height: 320px;
+    }
+    h2{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .contenedor{
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+    .cuadros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cuadro{
+        padding: 10px;
+    }
+    .cuadro:hover{
+        scale: 1.1;
+        transition: 0.7s;
+        font-size: 15px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

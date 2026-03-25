@@ -1,0 +1,248 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: arial;
+}
+nav{
+    background-color: rgb(13, 10, 56);
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 2px solid blanchedalmond;
+    
+}
+.enlaces{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    align-items: center;
+}
+.enlace{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+.enlace:hover{
+    color: aqua;
+    transition: 0.8s;
+    font-size: 22px;
+}
+.contactos{
+    background-color: rgb(216, 125, 20);
+    padding: 5px;
+    border-radius: 12%;
+}
+.contactos:hover{
+    background-color: rgb(165, 42, 42);
+    color: aqua;
+    transition: 1s;
+    padding: 10px;
+    border-radius: 25%;
+}
+.logo{
+    width: auto;
+    height: 60px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenedor{
+    background: linear-gradient(rgb(4, 4, 56), rgb(15, 24, 151));
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h2{
+    color: rgb(226, 138, 23);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.cuadros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    padding-bottom: 70px;
+    z-index: 5;
+}
+.cuadro{
+    width: 200px;
+    height: 200px;
+
+    padding-bottom: 40px;
+}
+.cuadro:hover{
+    scale: 1.1;
+    transition: 0.7s;
+    font-size: 18px;
+    gap: 10px;
+}
+.cuadro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(105, 58, 14);
+}
+.texto{
+    width: 190px;
+    height: 50px;
+    color: aliceblue;
+    text-align: center;
+    position: flex;
+    border-width: 1px;
+    border-color: rgb(145, 80, 36);
+    border-style: solid;
+    background: linear-gradient( rgb(129, 58, 17), rgb(228, 115, 22));
+    border-radius: 30px;
+}
+.precio{
+    color: rgb(32, 32, 92);
+    text-align: center;
+    font-weight: bold;
+}
+footer {
+    background-color: blue;
+    background: black;
+    color: rgb(65, 65, 187);
+    padding: 10px;
+    margin-top: auto;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 2x;
+}
+.footer-title {
+    font-size: 1.8rem;
+    color: rgb(76, 122, 175);
+    margin-bottom: 1rem;
+}
+.footer-section h4 {
+    font-size: 1.2rem;
+    color: rgb(76, 122, 175);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 0.5rem;
+}
+.footer-description {
+    color: rgb(184, 179, 179);
+    line-height: 1.6;
+}
+.footer-links {
+    list-style: none;
+}
+.footer-links li {
+    margin-bottom: 1px;
+}
+.footer-links a {
+    color: rgb(184, 179, 179);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: rgb(76, 122, 175);
+}
+.footer-contact p {
+    margin-bottom: 0.5rem;
+    color: rgb(184, 179, 179);
+}
+.redes{
+    width: auto;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+}
+.redes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer-bottom {
+    border-top: 1px solid rgb(55, 55, 85);
+    margin-top: 2px;
+    padding-top: 1px;
+    text-align: center;
+    color: rgb(149, 165, 166);
+}
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        background: linear-gradient(rgb(62, 177, 197), rgb(35, 16, 117));
+        position: relative;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 10px;
+    }
+    .logo img {
+        width: auto;
+        height: 60px;
+    }
+    .enlaces {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .enlaces li {
+        display: flex;
+        text-align: center;
+    }
+    .enlaces a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+        height: 40px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 10px;
+        border: 1px double rgba(255,255,255,0.2);
+    }
+    .contenedor{
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+    h2{
+        padding: 14px;
+    }
+    .cuadros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cuadro{
+        padding: 10px;
+    }
+    .cuadro:hover{
+        scale: 1.1;
+        transition: 0.7s;
+        font-size: 15px;
+    }
+}
